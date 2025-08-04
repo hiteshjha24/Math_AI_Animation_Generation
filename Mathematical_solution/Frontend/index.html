@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Animation Generator | Visualize Concepts</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="particles" id="particles-js"></div>
+  
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <i class="fa-solid fa-calculator"></i>
+        <h1>Math Animation Generator</h1>
+      </div>
+      <p class="subtitle">Get beautiful visual Animated Solutions of Your Math Problems</p>
+    </div>
+
+    <div class="input-container">
+  <div class="textarea-wrapper">
+    <textarea id="prompt" rows="5" placeholder="Enter a math concept or question..."></textarea>
+    <div class="textarea-decoration"></div>
+  </div>
+  
+  <div class="button-container">
+    <button class="generate-btn" onclick="event.preventDefault(); submitPrompt()">
+      <span class="btn-text">Generate Animation</span>
+      <span class="btn-icon">
+        <i class="fas fa-magic"></i>
+      </span>
+    </button>
+  </div>
+</div>
+
+    <div class="status-container">
+      <div id="status" class="status-message">
+        <i class="fas fa-lightbulb"></i> Enter a math concept above to generate an animation
+      </div>
+    </div>
+
+    <div class="video-container">
+      <video id="videoPreview" controls></video>
+    </div>
+
+    <div class="examples">
+      <h3>Try these examples:</h3>
+      <div class="example-buttons">
+        <button class="example-btn" onclick="loadExample('Visualize the Pythagorean theorem')">Pythagorean theorem</button>
+        <button class="example-btn" onclick="loadExample('Show how quadratic equations work')">Quadratic equations</button>
+        <button class="example-btn" onclick="loadExample('Demonstrate trigonometric functions')">Trigonometry</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Math made visual by Hitesh Jha | © 2025 Math Animation Generator</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
